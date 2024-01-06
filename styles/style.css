@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+.navigation {
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+hr {
+  margin: 0;
+  border: none;
+  background-color: #545464;
+  height: 3px
+}
+
+.nav-left, .nav-right{
+  width: 50%;
+  height: 75px;
+  background-color: #0B0B22;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right{
+  display: flex;
+  align-items: center;
+}
+
+.jungle-icon {
+  width: 50px;
+  margin-left: 25%;
+}
+
+.nav-left-title{
+  margin-left: 10px;
+  font-size: 24px;
+  color: #E3DAC9;
+}
+
+.nav-right-list {
+  list-style-type: none;
+  margin: 0 ;
+  padding: 0 0 0 25%;
+  display: flex;
+}
+.nav-right-list .nav-list-item a {
+  margin-right: 20px;
+  font-size: 22px;  
+  text-decoration: none;
+  color: #E3DAC9; 
+}
