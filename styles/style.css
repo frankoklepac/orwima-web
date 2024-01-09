@@ -17,7 +17,7 @@ hr {
   margin: 0;
   border: none;
   background-color: #545464;
-  height: 2px
+  height: 3px
 }
 
 .nav-left, .nav-right{
@@ -156,3 +156,106 @@ hr {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
 }
+
+.champ-info {
+  background-color: yellow;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.champ-info-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.champ-info-right{
+  width: 50%;
+  height: 100%;
+  background-color: #0B0B22;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: -5px 0 -5px;
+}
+
+.champ-info-left-photo {
+  width: 20%;
+  height: 100%;
+  background-color: #0B0B22;
+}
+
+.champ-info-left-abilities {
+  width: 80%;
+  height: 100%;
+  background-color: #0B0B22;
+}
+
+.champ-info-left-photo img {
+  width: 100px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.champ-info-left-title {
+  height: 35%;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #E3DAC9;
+  margin-left: 15px;
+
+}
+
+.abilities, .strong-against, .weak-against {
+  list-style-type: none; 
+  display: flex; 
+  padding: 0 0 0 15px; 
+  margin: 0; 
+}
+
+.abilities li, .strong-against li, .weak-against li{
+  margin-right: 30px; 
+}
+
+.abilities img {
+  width: 51px;
+}
+
+.champ-info-strong, .champ-info-weak{
+  width: 30%;
+  height: 80%;
+  margin: 0 25px 0 25px;
+}
+
+.champ-info-strong, .champ-info-weak{
+  background-color: #08083E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.strong-against img, .weak-against img {
+  padding: 0;
+  margin: 0;
+  width: 70px;
+}
+
+.champ-info-strong h1, .champ-info-weak h1 {
+  height: 30%;
+  margin: 0;
+  padding: 3px 0 10px 0 ;
+  color: #E3DAC9;
+  font-size: 25px;
+}
+
+
