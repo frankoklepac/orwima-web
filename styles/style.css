@@ -88,17 +88,71 @@ hr {
   margin: 0;
   padding: 0;
 }
-
 .champion-icons {
   position: absolute;
   top: 60%;
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-around; 
+  justify-content: center; 
+  align-items: center;
   flex-wrap: wrap; 
 }
 
+.champion-card {
+  width: 130px;
+  height: 170px;
+  margin: 0 40px 0 40px;
+  background-color: #0B0B22;
+  position: relative;
+  border-radius: 20px;
+}
+
+.champion-card:hover{
+  box-shadow: 0 10px 10px rgba(0,0,0,0.8) ;
+  cursor: pointer;
+
+}
+
 .champion-card img {
-  width: 50%; /* This will make the images take up 15% of the width of the .image-container */
+  width: 60%; 
+  margin-top: 20px;
+  padding: 0;
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+}
+
+.champion-card h2 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  color: #E3DAC9;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.footer{
+  width: auto;
+  height: 100px;
+  margin:0;
+  padding:0;
+  background-color: #0B0B22;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.footer p{
+  margin: 0;
+  color: #E3DAC9;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
 }
