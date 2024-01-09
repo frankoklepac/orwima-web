@@ -158,7 +158,7 @@ hr {
 }
 
 .champ-info {
-  background-color: yellow;
+  background-color: #0B0B22;
   height: 150px;
   display: flex;
   flex-direction: row;
@@ -257,5 +257,102 @@ hr {
   color: #E3DAC9;
   font-size: 25px;
 }
+
+.runes-info-eve { 
+  background-image: url(../images/splash/evelynn_splash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.spells-runes{
+  width: 40%;
+  height: 100%;
+  margin: 0 25px 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spells{
+  margin-top: 80px;
+  background-color: #181838;
+  width: 100%;
+  height: 15%;
+}
+
+.spells h1, .runes h1 {
+  color: #E3DAC9;
+  font-size: 26px;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.spells-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.spells-list li {
+  margin-right: 30px;
+}
+
+.spells-list img {
+  width: 45px;
+  margin: 10px 0 0 0;  
+}
+
+.runes {
+  background-color: #181838;
+  width: 100%;
+  height: 85%;
+  margin-bottom: 120px;
+}
+
+.runes img{
+  width: 550px;
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+}
+.tips {
+  background-color: yellow;
+  width: 40%;
+  height: 100%;
+  margin: 80px 10% 0 25px;
+}
+
+.tips h1 {
+  color: #E3DAC9;
+  font-size: 26px;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+.tips-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 120px;
+}
+
+.tips-list li {
+  margin-right: 30px;
+  width: 80%;
+  padding: 0;
+}
+
+
+
 
 
