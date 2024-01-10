@@ -270,6 +270,66 @@ hr {
   align-items: flex-start;
 }
 
+.runes-info-karthus { 
+  background-image: url(../images/splash/karthus_splash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.runes-info-lillia { 
+  background-image: url(../images/splash/lillia_splash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.runes-info-kayn { 
+  background-image: url(../images/splash/kayn_splash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.runes-info-khazix { 
+  background-image: url(../images/splash/khazix_splash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.runes-info-jarvan { 
+  background-image: url(../images/splash/jarvan_splash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 .spells-runes{
   width: 50%;
   height: 100%;
