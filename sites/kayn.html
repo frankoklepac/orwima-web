@@ -17,7 +17,6 @@
       <ul class="nav-right-list">
         <li class="nav-list-item"><a href="../index.html">Home</a></li>
         <li class="nav-list-item"><a href="https://www.leagueoflegends.com/en-us/news/tags/patch-notes/" target="_blank">Patch Notes</a></li>
-        <li class="nav-list-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -34,11 +33,71 @@
           </div>
           <div class="champ-info-left-abilities-list">
             <ul class="abilities">
-              <li class="ability"><img src="../images/icons/kayn_passive.png" alt="The Darkin Scythe"></li>
-              <li class="ability"><img src="../images/icons/kayn_q.png" alt="Reaping Slash"></li>
-              <li class="ability"><img src="../images/icons/kayn_w.png" alt="Blade's Reach"></li>
-              <li class="ability"><img src="../images/icons/kayn_e.png" alt="Shadow Step"></li>
-              <li class="ability"><img src="../images/icons/kayn_r.png" alt="Umbrall Trespass"></li>
+              <li class="ability">
+                <img 
+                src="../images/icons/kayn_passive.png" 
+                alt="The Darkin Scythe"
+                data-description=
+                "INNATE: Kayn has a secondary experience bar that tracks progress toward his Darkin and Shadow Assassin forms. He gathers orbs from champion takedowns and each instance of damage (excluding damage over time) dealt against champions. Once he has earned enough orbs, he unlocks a form based on whether he earned more from melee or ranged champions (for Darkin Darkin and Shadow Assassin Shadow Assassin, respectively), with the other form unlocked later.
+                
+                Kayn can move near the summoning platform to transform over 6 seconds, restoring to full health and mana and becoming invulnerable, untargetable, and unable to act for the duration. Kayn cannot choose a form if he is unable to cast abilities. The transformation will grant a passive bonus and permanently empower some of Kayn's abilities based on the form chosen. He gains a one-time Homeguard once the transformation is complete.
+                
+                SHADOW ASSASSIN BONUS: If Kayn has been out of combat with enemy champions for over 8 seconds, or he casts Umbral Trespass, he deals 15% − 45% (based on level) of post-mitigation damage dealt against enemy champions as bonus magic damage, lasting for 3 seconds upon entering combat and also applying on the first instance of damage dealt. If this effect is ready, it will not be lost by taking damage.
+                
+                DARKIN BONUS: Rhaast heals for 25% of the post-mitigation physical damage that he deals to enemy champions with his abilities.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/kayn_q.png" 
+                alt="Reaping Slash"
+                data-description=
+                "ACTIVE: Kayn dashes in the target direction, dealing physical damage to enemies he passes through. He then swings his scythe, dealing the same damage to nearby enemies.
+                
+                Both instances of Reaping Slash deal 40 bonus physical damage againstminions and monsters.
+                
+                DARKIN BONUS: Reaping Slash's damage is modified to deal 65% AD (+ 5% (+ 3.5% per 100 bonus AD) of the target's maximum health) physical damage for both instances. This damage has a cap against monsters that does not include the bonus damage.
+                
+                Reaping Slash's dash speed scales with Kayn's total movement speed.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/kayn_w.png" 
+                alt="Blade's Reach"
+                data-description=
+                "ACTIVE: Kayn swings his scythe in the target direction, dealing physical damage to enemies hit and slowing them by 90% decaying over 1.5 seconds.
+                
+                SHADOW ASSASSIN BONUS: Blade's Reach's radius is extended by 200 units. Kayn conjures an untargetable shadow at the casting position to perform Blade's Reach's sweep over 0.55 seconds in his stead, removing the ability's cast time.
+                
+                DARKIN BONUS: Blade's Reach knocks up enemies hit for 1 second.">
+              </li>
+              <li class="ability">
+                <img W
+                src="../images/icons/kayn_e.png" 
+                alt="Shadow Step"
+                data-description=
+                "ACTIVE: Kayn gains 40% bonus total movement speed, cthosting and the ability to ignore terrain collision for a duration. If he has been in combat with enemy champions within the last 3 seconds, Shadow Step will instead last 1.5 seconds.
+                
+                Kayn heals himself upon entering terrain for the first time from casting Shadow Step and he gains unobstructed vision while inside.
+                
+                Receiving damage from or dealing damage to an enemy champion while Shadow Step is active reduces its remaining duration to 1.5 seconds. This effect also cannot remain active out of terrain for longer than 1.5 seconds and will cancel immediately if Kayn performs a basic attack or becomes immobilized, excluding from sleep, or polymorphed.
+                
+                SHADOW ASSASSIN BONUS: Shadow Step's cooldown is reduced to 10 seconds at all ranks. Kayn gains 100% slow resist while active and, upon entering terrain, the bonus total movement speed is increased to 70% for the remaining duration.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/kayn_r.png" 
+                alt="Umbrall Trespass"
+                data-description=
+                "PASSIVE: Kayn marks enemy champions he damaged in the last 3.15 seconds.
+                
+                ACTIVE: Kayn vanishes and dashes to a marked enemy champion. Upon arrival, he channels for up to 2.5 seconds, attaching to the target and revealing them. Umbral Trespass can be recast after 0.75 seconds during the channel, and does so automatically after the duration or if it is interrupted.
+                
+                RECAST: After a 0.75-second delay, Kayn deals physical damage to the target and dashes out from their body in the the target direction, detaching himself from them and becoming targetable again at the end of the dash.
+                
+                SHADOW ASSASSIN BONUS: Umbral Trespass gains 200 bonus cast range and emerge range. Additionally, emerging will reset The Darkin Scythe's cooldown.
+                
+                DARKIN BONUS: Umbral Trespass is modified to deal physical damage equal to 15% (+ 10% per 100 bonus AD) of the target's maximum health, and heals him for 9.75% (+ 6.5% per 100 bonus AD) of the target's maximum health.">
+              </li>
             </ul>
           </div>
         </div>
@@ -145,6 +204,16 @@
     <p>Information used for the website is sourced from op.gg, u.gg and jungler.gg </p>
   </div>
 
-  <script src="scripts/script.js"></script>
+  <div id="abilityModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-top-row">
+        <img id="abilityIcon" src="" alt="Ability Icon">
+        <h2 id="abilityName"></h2>
+      </div>
+      
+      <p id="abilityDescription"></p>
+    </div>
+  </div>
+  <script src="../scripts/script.js"></script>
 </body>
 </html>

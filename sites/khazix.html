@@ -17,7 +17,6 @@
       <ul class="nav-right-list">
         <li class="nav-list-item"><a href="../index.html">Home</a></li>
         <li class="nav-list-item"><a href="https://www.leagueoflegends.com/en-us/news/tags/patch-notes/" target="_blank">Patch Notes</a></li>
-        <li class="nav-list-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -34,11 +33,68 @@
           </div>
           <div class="champ-info-left-abilities-list">
             <ul class="abilities">
-              <li class="ability"><img src="../images/icons/khazix_passive.png" alt="The Darkin Scythe"></li>
-              <li class="ability"><img src="../images/icons/khazix_q.png" alt="Reaping Slash"></li>
-              <li class="ability"><img src="../images/icons/khazix_w.png" alt="Blade's Reach"></li>
-              <li class="ability"><img src="../images/icons/khazix_e.png" alt="Shadow Step"></li>
-              <li class="ability"><img src="../images/icons/khazix_r.png" alt="Umbrall Trespass"></li>
+              <li class="ability">
+                <img 
+                src="../images/icons/khazix_passive.png" 
+                alt="Unseen Threat"
+                data-description=
+                "INNATE: Kha'Zix gains Unseen Threat whenever the enemy loses sight of him or he activates Void Assault.
+                
+                UNSEEN THREAT: Kha'Zix empowers his next basic attack against an enemy champion to deal 14 − 116 (based on level) (+ 40% bonus AD) bonus magic damage and slow them by 25% for 2 seconds.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/khazix_q.png" 
+                alt="Taste Their Fear / Evolved Reaper Claws"
+                data-description=
+                "PASSIVE: Kha'Zix considers any enemy unit to be Isolated if they are not nearby to one of their allies. Taste Their Fear, Evolved Reaper Claws, and Evolved Spike Racks have special interactions against Isolated targets.
+                
+                ACTIVE: Kha'Zix slashes the target enemy, dealing physical damage, increased by 110% against Isolated targets.
+                
+                PASSIVE: Kha'Zix gains 50 bonus range on his basic attacks and Taste Their Fear.
+                
+                EVOLVED BONUS: If the target is Isolated, the cooldown is reduced by 45%.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/khazix_w.png" 
+                alt="Void Spike / Evolved Spike Racks"
+                data-description=
+                "ACTIVE: Kha'Zix fires a bolt of spikes in the target direction that explodes upon hitting an enemy, dealing physical damage to nearby enemies.
+                
+                Kha'Zix heals himself if he is within the explosion.
+
+                EVOLVED BONUS: Void Spike now fires three clusters in a cone, slows by 40% and reveals enemy champions hit for 2 seconds. Multiple explosions do not deal extra damage to the same target nor provide Kha'Zix with additional healing.
+
+                Isolated targets hit by Evolved Spike Racks are slowed by 75% instead.
+                ">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/khazix_e.png" 
+                alt="Leap / Evolved Wings"
+                data-description=
+                "ACTIVE: Kha'Zix leaps to the target location, dealing physical damage to nearby enemies upon arrival.
+                
+                Taste Their Fear can be cast during the dash. Leap will cast at max range if cast beyond that.
+                
+                EVOLVED BONUS: Leap gains 200 bonus cast range, and the cooldown resets upon scoring a champion takedown.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/khazix_r.png" 
+                alt="Void Assault / Evolved Adaptive Cloaking"
+                data-description=
+                "PASSIVE: Each rank in Void Assault allows Kha'Zix to evolve one of his abilities, granting it additional effects. Evolving an ability causes him to enter a 2-second cast time. Kha'Zix cannot evolve while he is unable to cast abilities.
+                
+                ACTIVE: Kha'Zix becomes invisible for 1.25 seconds, during which he gains 40% bonus movement speed.
+                
+                After 2 seconds of leaving invisibility, and for the next 12 seconds, Void Assault can be recast at no additional cost.
+                     
+                RECAST: Kha'Zix mimics the first cast's effects.
+                
+                EVOLVED BONUS: The invisibility now lasts 2 seconds, and Void Assault can be recast twice.">
+              </li>
             </ul>
           </div>
         </div>
@@ -146,6 +202,16 @@
     <p>Information used for the website is sourced from op.gg, u.gg and jungler.gg </p>
   </div>
 
-  <script src="scripts/script.js"></script>
+  <div id="abilityModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-top-row">
+        <img id="abilityIcon" src="" alt="Ability Icon">
+        <h2 id="abilityName"></h2>
+      </div>
+      
+      <p id="abilityDescription"></p>
+    </div>
+  </div>
+  <script src="../scripts/script.js"></script>
 </body>
 </html>

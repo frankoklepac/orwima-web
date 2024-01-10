@@ -17,7 +17,6 @@
       <ul class="nav-right-list">
         <li class="nav-list-item"><a href="../index.html">Home</a></li>
         <li class="nav-list-item"><a href="https://www.leagueoflegends.com/en-us/news/tags/patch-notes/" target="_blank">Patch Notes</a></li>
-        <li class="nav-list-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -34,11 +33,57 @@
           </div>
           <div class="champ-info-left-abilities-list">
             <ul class="abilities">
-              <li class="ability"><img src="../images/icons/lillia_passive.png" alt="Dream-Laden Bough"></li>
-              <li class="ability"><img src="../images/icons/lillia_q.png" alt="Blooming Blows"></li>
-              <li class="ability"><img src="../images/icons/lillia_w.png" alt="Watch Out! Epp!"></li>
-              <li class="ability"><img src="../images/icons/lillia_e.png" alt="Swirlseed"></li>
-              <li class="ability"><img src="../images/icons/lillia_r.png" alt="Lilting Lullaby"></li>
+              <li class="ability">
+                <img 
+                src="../images/icons/lillia_passive.png" 
+                alt="Dream-Laden Bough"
+                data-description=
+                "INNATE: Lillia's abilities apply Dream Dust to enemies hit, which deals「 5% (+ 1.5% per 100 AP) of the target's maximum health total magic damage over 3 seconds, capped at 70 − 150 (based on level) against monsters.
+                
+                Lillia Heal power icon heals for 39 − 54 (based on level) (+ 15% AP) against large monsters and 6 − 90 (based on level) (+ 30% AP) against champions over the duration of Dream Dust, reduced to 33% effectiveness for each target beyond the first. She may only heal against 1 monster at a time.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/lillia_q.png" 
+                alt="Blooming Blows"
+                data-description=
+                "PASSIVE: Whenever Lillia's abilities hit at least one enemy, she generates a stack of Prance for 6.5 seconds, refreshing on subsequent hits and stacking up to 4 times. Stacks expire by one every 1.5 seconds when the duration ends.
+                
+                PRANCE: For each stack, Lillia gains bonus movement speed.
+                
+                ACTIVE: Lillia swings her censer around her, dealing magic damage to nearby enemies. Enemies hit within the outer edge of the area additionally take the same amount as bonus true damage.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/lillia_w.png" 
+                alt="Watch Out! Epp!"
+                data-description=
+                "ACTIVE: Lillia dashes to 150 units in front of the target location over 0.759 seconds, though not through terrain, and deals magic damage in an area around the target spot. Enemies hit within the epicenter are dealt 200% increased damage.
+                
+                Watch Out! Eep! deals 50% damage to minions.
+                
+                Watch Out! Eep! will cast at max range if cast beyond that.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/lillia_e.png" 
+                alt="Swirlseed"
+                data-description=
+                "ACTIVE: Lillia lobs a seed at the target location that rolls forward indefinitely. The seed detonates upon hitting an enemy or terrain while on the ground, dealing magic damage to enemies in a cone, slowing them by 40% for 3 seconds and revealing them for 2 seconds.
+                
+                Swirlseed will cast at max range if cast beyond that.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/lillia_r.png" 
+                alt="Lilting Lullaby"
+                data-description=
+                "ACTIVE: Lillia casts a magical lullaby over all enemy champions affected by Dream Dust, which arrives after 0.3 seconds and renders them drowsy for 1.5 seconds, slowing them by 10%. After the duration, they fall asleep for a duration.
+                
+                The next instance of non-persistent non-minion non-small and medium monster damage against a sleeping target consumes the debuff to deal additional magic damage.
+                
+                An enemy champion affected by Dream Dust is required to cast this ability.">
+              </li>
             </ul>
           </div>
         </div>
@@ -145,6 +190,16 @@
     <p>Information used for the website is sourced from op.gg, u.gg and jungler.gg </p>
   </div>
 
-  <script src="scripts/script.js"></script>
+  <div id="abilityModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-top-row">
+        <img id="abilityIcon" src="" alt="Ability Icon">
+        <h2 id="abilityName"></h2>
+      </div>
+      
+      <p id="abilityDescription"></p>
+    </div>
+  </div>
+  <script src="../scripts/script.js"></script>
 </body>
 </html>

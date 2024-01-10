@@ -17,7 +17,6 @@
       <ul class="nav-right-list">
         <li class="nav-list-item"><a href="../index.html">Home</a></li>
         <li class="nav-list-item"><a href="https://www.leagueoflegends.com/en-us/news/tags/patch-notes/" target="_blank">Patch Notes</a></li>
-        <li class="nav-list-item"><a href="./contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -34,11 +33,51 @@
           </div>
           <div class="champ-info-left-abilities-list">
             <ul class="abilities">
-              <li class="ability"><img src="../images/icons/karthus_passive.png" alt="Death Defied"></li>
-              <li class="ability"><img src="../images/icons/karthus_q.png" alt="Lay Waste"></li>
-              <li class="ability"><img src="../images/icons/karthus_w.png" alt="Wall of Pain"></li>
-              <li class="ability"><img src="../images/icons/karthus_e.png" alt="Defile"></li>
-              <li class="ability"><img src="../images/icons/karthus_r.png" alt="Requiem"></li>
+              <li class="ability">
+                <img 
+                src="../images/icons/karthus_passive.png" 
+                alt="Death Defied"
+                data-description=
+                "INNATE: Upon taking fatal damage, Karthus enters a zombie state for 7 seconds, during which he can cast his abilities at no cost. If Defile has been learned, it will remain toggled on for Death Defied's entire duration. Requiem becomes disabled after Death Defied has lasted 4 seconds.
+                
+                While under this state, Karthus becomes untargetable and immune to crowd control as well as prevents all incoming damage, but is also rendered unable to move, declare basic attacks, use summoner spells, and activate items.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/karthus_q.png" 
+                alt="Lay Waste"
+                data-description=
+                "ACTIVE: Karthus conjures a blast at the target location that detonates after 0.528 seconds to 0.759 seconds, granting sight of the area and dealing magic damage to all enemies within, doubled when only one target is struck.
+                
+                During Death Defied, Lay Waste will cast at maximum range if cast beyond that.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/karthus_w.png" 
+                alt="Wall of Pain"
+                data-description=
+                "ACTIVE: Karthus erects a wall of pain at the target location perpendicular to his facing that lasts 5 seconds, granting sight around its pillars and center.
+                
+                Enemies that touch the wall are inflicted with 15% magic resistance reduction and become slowed for 5 seconds, decaying over the duration. Enemies can be affected by Wall of Pain only once per cast.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/karthus_e.png" 
+                alt="Defile"
+                data-description=
+                "PASSIVE: Karthus restores Mana icon mana whenever he kills an enemy.
+                
+                TOGGLE: Karthus surrounds himself in a necrotic aura that deals magic damage every 0.25 seconds to all nearby enemies. Toggling Defile off triggers a final tick of damage.
+                
+                Defile cannot be toggled off during Death Defied.">
+              </li>
+              <li class="ability">
+                <img 
+                src="../images/icons/karthus_r.png" 
+                alt="Requiem"
+                data-description=
+                "ACTIVE: Karthus channels for 3 seconds, then deals magic damage to all targetable enemy champions upon completion.">
+              </li>
             </ul>
           </div>
         </div>
@@ -149,6 +188,16 @@
     <p>Information used for the website is sourced from op.gg, u.gg and jungler.gg </p>
   </div>
 
-  <script src="scripts/script.js"></script>
+  <div id="abilityModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-top-row">
+        <img id="abilityIcon" src="" alt="Ability Icon">
+        <h2 id="abilityName"></h2>
+      </div>
+      
+      <p id="abilityDescription"></p>
+    </div>
+  </div>
+  <script src="../scripts/script.js"></script>
 </body>
 </html>
