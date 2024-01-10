@@ -271,9 +271,9 @@ hr {
 }
 
 .spells-runes{
-  width: 40%;
+  width: 50%;
   height: 100%;
-  margin: 0 25px 0 10%;
+  margin: 0 55px 0 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,7 +290,7 @@ hr {
   color: #E3DAC9;
   font-size: 26px;
   margin: 0;
-  padding: 0 0 0 20px;
+  padding: 15px 0 0 20px;
 }
 
 .spells-list {
@@ -325,17 +325,18 @@ hr {
   padding-left: 20px;
 }
 .tips {
-  background-color: yellow;
+  background-color: #181838;
   width: 40%;
-  height: 100%;
-  margin: 80px 10% 0 25px;
+  height: 82%;
+  margin: 80px 10% 0 105px;
+  padding:0;
 }
 
 .tips h1 {
   color: #E3DAC9;
   font-size: 26px;
   margin: 0;
-  padding: 0 0 0 20px;
+  padding: 15px 0 0 20px;
 }
 
 .tips-list {
@@ -347,12 +348,72 @@ hr {
 }
 
 .tips-list li {
-  margin-right: 30px;
+  margin: -5px;
   width: 80%;
+  padding: 0;
+  color:#E3DAC9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.tips-list li strong{
+  color: #C89B4B;
+}
+
+.skills-eve, .items-eve{
+  width: 100%;
+  height: 275px;
+  background-color: #0B0B22;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   padding: 0;
 }
 
+.items-eve{
+  height: 230px;
+}
 
+.skills-eve img{
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-priority-eve {
+  margin-right: 2px;
+}
+
+.items-eve img {
+  height: 202px;
+  margin: 0 2px 0 2px;
+  padding: 0;
+}
+
+.clear-path{
+  width: 100%;
+  height: 720px;
+  background-color: #0B0B22;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.clear-path h1{
+  color: #E3DAC9;
+  font-size: 26px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.clear-path img{
+  width: 850px;
+}
 
 
 
