@@ -420,7 +420,7 @@ hr {
   color: #C89B4B;
 }
 
-.skills-eve, .items-eve{
+.skills, .items{
   width: 100%;
   height: 275px;
   background-color: #0B0B22;
@@ -432,21 +432,45 @@ hr {
   padding: 0;
 }
 
-.items-eve{
+.items{
   height: 230px;
 }
 
-.skills-eve img{
+.skills img{
   height: 250px;
   margin: 0;
   padding: 0;
 }
 
-.skill-priority-eve {
+.skills-khazix img {
+  height: 226px;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-lillia img {
+  height: 222px;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-jarvan img {
+  height: 222px;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-kayn img {
+  height: 222px;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-priority {
   margin-right: 2px;
 }
 
-.items-eve img {
+.items img {
   height: 202px;
   margin: 0 2px 0 2px;
   padding: 0;
