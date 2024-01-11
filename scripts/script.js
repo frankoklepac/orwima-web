@@ -6,7 +6,7 @@ var abilities = document.querySelectorAll(".ability img");
 
 abilities.forEach(function(ability) {
   ability.addEventListener("click", function() {
-    // Get the ability information
+
     var iconSrc = this.src;
     var abilityName = this.alt;
     var abilityDescription = this.dataset.description; 
