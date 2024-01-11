@@ -23,3 +23,15 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var ability_list = document.getElementsByClassName("ability");
+
+for (var i = 0; i < ability_list.length; i++) {
+  ability_list[i].addEventListener("mouseover", function() {
+    this.querySelector(".ability-info").style.display = "block";
+  });
+
+  ability_list[i].addEventListener("mouseout", function() {
+    this.querySelector(".ability-info").style.display = "none";
+  });
+}
