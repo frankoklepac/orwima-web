@@ -538,6 +538,12 @@ hr {
   margin: 0 5px 0 5px;
 }
 
+.modal-content p{
+  margin: 0 5px 0 5px;
+  padding: 0;
+  font-size: 16px;
+}
+
 .modal-top-row {
   display: flex;
   flex-direction: row;
@@ -545,4 +551,6 @@ hr {
   justify-content: flex-start;
   width: 100%;
 }
+
+
 
