@@ -557,12 +557,32 @@ hr {
 }
 
 .ability-info {
-  display:none;
+  display: none;
   position: absolute;
-  bottom: -20px;
-  left:0;
-  background-color: #fff;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  background-color: #181838;
   padding: 5px;
   text-align: center;
+  z-index: 1;
+  border-radius: 5px;
 }
 
+.ability-info span {
+  display: block;
+  color: #E3DAC9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.see-more {
+  color: #E3DAC9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
