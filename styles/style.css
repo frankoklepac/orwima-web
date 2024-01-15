@@ -63,6 +63,7 @@ hr {
   height: auto;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 .background {
