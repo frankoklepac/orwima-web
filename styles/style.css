@@ -11,6 +11,7 @@ h1 {
   width: auto;
   display: flex;
   background-color: #0B0B22;
+  user-select: none;
 }
 
 hr {
@@ -168,6 +169,7 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
+  user-select: none;
 }
 
 .champ-info-left {
@@ -529,7 +531,6 @@ hr {
   user-select: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -540,7 +541,7 @@ hr {
 
 .modal-content p{
   margin: 0 5px 0 5px;
-  padding: 0;
+  padding: 10px 0 0 0;
   font-size: 16px;
 }
 
